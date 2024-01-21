@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Positon absolute and relative</title>
+    <style>
+        body {
+            height: 3000px;
+            padding-top: 60px;
+            padding-left: 80px;
+            font-family: Arial;
+        }
+
+        .header {
+            background-color: black;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            z-index: 1;
+        }
+
+        .sidebar {
+            background-color: green;
+            position: fixed;
+            top: 50px;
+            left: 0;
+            bottom: 0;
+            width: 72px;
+        }
+
+        .absolute {
+            position: absolute;
+            background-color: red;
+            color: white;
+            right: 10px;
+        }
+
+        .absolute2 {
+            position: absolute;
+            background-color: red;
+            color: white;
+            right: 0;
+            top:0;
+        }
+        .absolute3{
+            position: absolute;
+            background-color: red;
+            color:white;
+            right:0;
+            top:0;
+            width: 12px;
+        }
+        .div1 {
+            position: relative;
+            background-color: lightblue;
+            height: 200px;
+            width: 200px;
+        }
+        .div2 {
+            position: relative;
+            background-color: lightpink;
+            height: 200px;
+            width: 200px;
+        }
+        .time1,.time2{
+            position: absolute;
+            background-color: black;
+            color:white;
+            font-size: small;
+            font-weight: bold;
+            border-radius: 4px;
+            padding: 4px;
+            right: 5px;
+            bottom: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="header">header</div>
+    <div class="sidebar">
+        sidebar
+            <div class="absolute2">X</div>
+    </div>
+    <div class="absolute">absolute</div>
+    <div class="div1">
+        div 1
+        <div class="time1">14:20</div>
+    </div>
+    <div class="div2">
+        div 2
+        <div class="time2">8:22</div>
+    </div>
+</body>
+
+</html>

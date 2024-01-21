@@ -1,0 +1,15 @@
+/* @media (max-width:500px){
+    .className{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width:501px)and (max-width:999){
+    .className{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width:1000px){
+    .className{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+} */

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        /*
+        (1) Static Positon(the default position)
+        (2) Absolute Positon
+        (3) Relative Positon
+        */
+        <title>Positon Practice</title>
+        <style>
+            body{
+                height:3000px;
+                padding-top: 60px;
+                padding-left: 80px;
+            }
+            .header{
+                background-color: black;
+                color:white;
+                position: fixed;
+                top:0;
+                left:0;
+                right:0;
+                height:50px;
+            }
+            .sidebar{
+                background-color:green;
+                position:fixed;
+                top:50px;
+                left:0;
+                bottom:0;
+                width:72px;
+            }
+            .div1{
+                background-color: lightblue;
+                height:200px;
+                width:200px;
+            }
+            .div2{
+                background-color:lightpink;
+                height:200px;
+                width: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">header</div>
+        <div class="sidebar">sidebar</div>
+        <div class="div1">div 1</div>
+        <div class="div2">div 2</div>
+    </body>
+</html>
